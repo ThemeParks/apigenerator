@@ -1,0 +1,14 @@
+{
+  "name": "themeparkswiki_apigen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "openapi-generator-cli generate"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.4.26"
+  }
+}

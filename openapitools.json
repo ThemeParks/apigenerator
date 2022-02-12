@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/@openapitools/openapi-generator-cli/config.schema.json",
+  "spaces": 2,
+  "generator-cli": {
+    "version": "5.4.0",
+    "generators": {
+      "js": {
+        "generatorName": "javascript",
+        "output": "#{cwd}/../tpw_js",
+        "inputSpec": "https://api.themeparks.wiki/docs/v1.yaml",
+        "additionalProperties": {
+          "name": "themeparks",
+          "usePromises": true,
+          "projectName": "themeparks",
+          "projectDescription": "A Node.js API client for the Themeparks API",
+          "projectVersion": "6.0.0",
+          "projectRepository": "https://github.com/ThemeParks/client_js.git",
+          "projectOrganization": "ThemeParks",
+          "projectLicense": "MIT"
+        }
+      }
+    }
+  }
+}
