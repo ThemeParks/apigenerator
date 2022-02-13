@@ -6,17 +6,31 @@
     "generators": {
       "js": {
         "generatorName": "javascript",
-        "output": "#{cwd}/../tpw_js",
-        "inputSpec": "https://api.themeparks.wiki/docs/v1.yaml",
+        "output": "#{cwd}/../tpw_clients/tpw_js",
+        "glob": "../themeparksapi/docs/v1.yaml",
         "additionalProperties": {
-          "name": "themeparks",
           "usePromises": true,
-          "projectName": "themeparks",
-          "projectDescription": "A Node.js API client for the Themeparks API",
           "projectVersion": "6.0.0",
-          "projectRepository": "https://github.com/ThemeParks/client_js.git",
+          "projectRepository": "https://github.com/ThemeParks/ThemeParks_JavaScript",
+          "projectLicense": "MIT",
           "projectOrganization": "ThemeParks",
-          "projectLicense": "MIT"
+          "projectDescription": "A JavaScript client for the ThemeParks.Wiki API",
+          "projectName": "themeparks",
+          "name": "themeparks"
+        }
+      },
+      "py": {
+        "generatorName": "python",
+        "output": "#{cwd}/../tpw_clients/tpw_py",
+        "glob": "../themeparksapi/docs/v1.yaml",
+        "additionalProperties": {
+          "projectVersion": "1.0.0",
+          "projectRepository": "https://github.com/ThemeParks/ThemeParks_Python",
+          "projectLicense": "MIT",
+          "projectOrganization": "ThemeParks",
+          "projectDescription": "A Python client for the ThemeParks.Wiki API",
+          "projectName": "themeparks",
+          "name": "themeparks"
         }
       }
     }

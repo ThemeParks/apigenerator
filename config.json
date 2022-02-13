@@ -1,0 +1,23 @@
+{
+    "repos": [
+        {
+            "id": "js",
+            "name": "JavaScript",
+            "url": "https://github.com/ThemeParks/ThemeParks_JavaScript",
+            "generator": "javascript",
+            "additionalProperties": {
+                "usePromises": true,
+                "projectVersion": "6.0.0"
+            }
+        },
+        {
+            "id": "py",
+            "name": "Python",
+            "url": "https://github.com/ThemeParks/ThemeParks_Python",
+            "generator": "python",
+            "additionalProperties": {
+                "projectVersion": "1.0.0"
+            }
+        }
+    ]
+}

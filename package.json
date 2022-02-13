@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "openapi-generator-cli generate"
+    "checkout": "node checkout.js",
+    "generate_config": "node generate_config.js",
+    "generate": "openapi-generator-cli generate",
+    "commit": "node commit.js",
+    "start": "npm run checkout && npm run generate_config && npm run generate"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@openapitools/openapi-generator-cli": "^2.4.26"
+    "@openapitools/openapi-generator-cli": "^2.4.26",
+    "simple-git": "^3.1.1"
   }
 }
