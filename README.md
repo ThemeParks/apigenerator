@@ -23,3 +23,23 @@ npm run commit
 Configure client outputs in config.json
 
 openapitools.json will be automatically updated during generation.
+
+## Publishing
+
+### JavaScript
+
+Bump version in config.json, then run the generator above.
+
+```
+npm run build
+npm publish
+```
+
+### Python
+
+Bump version in config.json, then run the generator above.
+
+```
+python setup.py sdist
+twine upload .\dist\*
+```
